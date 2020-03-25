@@ -13,8 +13,8 @@ def home():
 #expresion que operamos en la ventana
 patron=re.compile('^([A-Z]{1}[0-9]{3}[a-z]+[\W]{3})$')
 
-@app.route('/add_contact',methods=['POST'])
-def add_contact():
+@app.route('/logica',methods=['POST'])
+def logica():
     if request.method=='POST':
         expresion=request.form['expresion']
 
