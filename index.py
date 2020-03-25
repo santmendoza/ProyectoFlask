@@ -20,10 +20,19 @@ def add_contact():
 
         if(patron.match(expresion)):
 
-                return "¡Es correcta la expresión!"
+                return valida()
         else:
-                return "¡Es incorrecta la expresión!"
-    
+               return error()
+
+
+@app.route('/home/error')
+def error():
+    return render_template('error.html')
+
+@app.route('/home/valida')
+def valida():
+    return render_template('valida.html')
+
 #escuchar siempre
 if __name__=='__main__':
     app.run(debug=True)
