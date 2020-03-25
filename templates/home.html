@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicativo de validación</title>
+    <!--Boostrap 4-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- CSS modificado-->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/main.css')}}"
+    />
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  </head>
+  <body>
+    <div id="fullscreen_bg" class="fullscreen_bg" />
+
+    <div class="container">
+      <form class="form-signin">
+        <h3 class="form-signin-heading text-white ">
+          Ingresa la contraseña a validar
+        </h3>
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Ingresa la contraseña"
+          required=""
+        />
+        <button class="btn btn-lg btn-primary btn-block" type="submit">
+          Validar
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
