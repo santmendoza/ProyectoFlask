@@ -22,15 +22,16 @@
     <div id="fullscreen_bg" class="fullscreen_bg" />
 
     <div class="container">
-      <form class="form-signin">
+      <form class="form-signin" action="/add_contact" method="POST">
         <h3 class="form-signin-heading text-white ">
           Ingresa la contraseña a validar
         </h3>
         <input
-          type="password"
+          type="user"
           class="form-control"
           placeholder="Ingresa la contraseña"
           required=""
+          name="expresion"
         />
         <button class="btn btn-lg btn-primary btn-block" type="submit">
           Validar
